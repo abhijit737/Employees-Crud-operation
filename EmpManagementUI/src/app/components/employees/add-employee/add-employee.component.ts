@@ -39,7 +39,7 @@ export class AddEmployeeComponent implements OnInit{
     .subscribe({
       next:(employee) => 
    // console.log(employee)
-    this.router.navigate(['employees'])
+    this.router.navigate(['/'])
   });
 
   

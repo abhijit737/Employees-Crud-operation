@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from 'src/app/models/employee.model';
 import { EmployeesService } from 'src/app/services/employees.service';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-employees-list',
   templateUrl: './employees-list.component.html',
@@ -40,7 +40,7 @@ export class EmployeesListComponent implements OnInit {
 //employee: any;
 
   //DI
-  constructor(private employeesService: EmployeesService){
+  constructor(private router: Router,private employeesService: EmployeesService){
 
 
   }

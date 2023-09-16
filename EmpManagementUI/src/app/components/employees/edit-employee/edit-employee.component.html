@@ -1,0 +1,49 @@
+
+
+<div class="container ">
+    <h1 class="mb-3">Edit Employee</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="updateEmployee()" >
+               
+                <div class="mb-3">
+                    <label for="id" class="form-label">Id</label>
+                    <input type="text" [(ngModel)]="employeeDetails.id" class="form-control" id="id" readonly  name="id" >
+                     </div>
+               
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" [(ngModel)]="employeeDetails.name" class="form-control" id="name" placeholder="Enter name"  name="name" >
+                   </div>
+                
+                   <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" [(ngModel)]="employeeDetails.email" class="form-control" id="email" placeholder="Enter Email" name="email" >
+                     </div>
+                  
+                     <div class="mb-3">
+                        <label for="Phone" class="form-label">Phone</label>
+                        <input type="number" [(ngModel)]="employeeDetails.phone" class="form-control" id="phone" placeholder="Enter mobile phone" name="phone">
+                         </div>
+                
+                         <div class="mb-3">
+                            <label for="salary" class="form-label">Salary</label>
+                            <input type="number" [(ngModel)]="employeeDetails.salary" class="form-control" id="salary" placeholder="Enter Salary" name="salary">
+                             </div>
+                
+                             <div class="mb-3">
+                                <label for="department" class="form-label">Department</label>
+                                <input type="text" [(ngModel)]="employeeDetails.department" class="form-control" id="department" placeholder="Enter Department"name="department">
+                                 </div>
+                              
+                <button type="submit" class="btn btn-primary ">Save</button>
+                
+                <button (click)="deleteEmployee(employeeDetails.id)" type="button" class="btn btn-danger mr-5 mb-0">Delete</button>
+
+ 
+              </form>          
+        </div>
+    </div>
+   
+</div>
