@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>CRUD Operation</title>
-</head>
-
-<body>
-   
-   
-    <!-- <a href="https://www.example.com">Link to Example</a> -->
-    <img src="image.jpg" alt="An image">
-
-    <!-- More comments here -->
-
-</body>
-</html>
+FrontEnd: Angular 16.
+Backend : DotNet Core 6.
+Database :  Microsoft SQL Server 2022 (RTM) - 16.0.1000.6 (X64) 
 
